@@ -1,0 +1,15 @@
+public class Wordc {
+    public static void main(String[] args) {
+        String sentence = "This is a sample sentence.";
+        int wordCt = count(sentence);
+        System.out.println("Number of words: " + wordCt);
+    }
+
+    public static int count(String sentence) {
+        if (sentence == null || sentence.isEmpty()) {
+            return 0;
+        }
+        String[] words = sentence.split("\\s+");
+        return words.length;
+    }
+}
